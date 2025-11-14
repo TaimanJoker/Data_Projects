@@ -1,0 +1,56 @@
+Basic Data Preprocessing in R
+This project involves performing basic data preprocessing using R programming language. The dataset used is a collection of crime data from the Los Angeles Police Department (LAPD) from 2020 to the present. The project demonstrates how to import, inspect, clean, transform, and subset data in R while also creating new data structures.
+
+Overview
+The purpose of this project is to showcase fundamental data preprocessing skills in R by:
+	1	Importing raw data from a .csv file.
+	2	Understanding and inspecting the data structure.
+	3	Handling data type conversions for appropriate analysis.
+	4	Subsetting and manipulating datasets.
+	5	Creating new data frames and vectors.
+
+Dataset Description
+The dataset used in this project contains information on crime incidents reported in Los Angeles since 2020. Due to the digitalization of old hard-copied reports, some rows may have missing or incomplete information.
+The dataset originally contains 28 fields, but for this project, 18 relevant fields were selected for analysis. These include information such as incident report numbers, dates, crime descriptions, victim demographics, and location details.
+The data was sourced from data.lacity.org on March 18, 2024.
+
+Project Workflow
+1. Setup
+The project uses the following R packages:
+	•	magrittr: For the pipe operator.
+	•	readr: To import .csv files.
+	•	dplyr: For data manipulation.
+	•	here: To automate the working directory.
+2. Data Import
+The raw dataset is imported using read_csv() while selecting only the required columns to improve efficiency.
+3. Inspection
+Functions like dim(), colnames(), head(), and str() are used to inspect the dimensions, column names, sample data, and structure of the dataset.
+4. Data Cleaning and Type Conversion
+Data types of various columns are converted to appropriate types (e.g., factor, integer, date). For instance:
+	•	The "Date Rptd" and "DATE OCC" fields are converted to Date.
+	•	"Vict Sex" is categorized as "Male", "Female", or "Unknown".
+	•	"AREA NAME" is treated as a categorical variable.
+5. Subsetting
+The slice_head() function is used to subset the first 10 rows of the dataset. This subset is then converted into a matrix for demonstration purposes.
+6. Creating a New Data Frame
+A new data frame is created with:
+	•	Random four-digit integers as student IDs.
+	•	Ordinal grades ("A", "B", "C", "D").
+	•	A numeric vector representing student weights.
+7. References
+The project cites multiple resources, including R documentation, external blog posts, and RMIT course materials, to support the methodologies used.
+
+How to Run the Code
+	1	Install the required R packages: install.packages(c("kableExtra", "magrittr", "readr", "dplyr", "here"))
+	2	
+	3	Clone the repository or download the .Rmd file.
+	4	Place the raw dataset in the specified path (RawData/Crime_Data_from_2020_to_Present.csv).
+	5	Knit the .Rmd file using RStudio to generate the report in HTML or PDF format.
+
+Acknowledgments
+This project uses data provided by the Los Angeles Police Department and insights gained from RMIT course materials. Special thanks to the creators of R packages and community contributors whose resources were referenced.
+
+Contact
+For any inquiries, please contact:
+	•	Author: Phankawee Mukdaprakorn
+	•	Email: phankawee_tai@hotmail.com
