@@ -36,7 +36,7 @@ This plot clearly proves that:
 * **Top Left (The "Brand Killers"):** The topic for "rude, unprofessional staff" is rare, but it is *by far* the most negative.
 
 ### 3. Conclusion: An Actionable Strategy
-This project successfully created an AI-powered "Prioritization Dashboard." It allows management to move past "gut feel" and distinguish between:
+This project successfully created a "Prioritization Dashboard." It allows management to move past "gut feel" and distinguish between:
 1.  **Chronic Annoyances** (fix with process, e.g., shower mats)
 2.  **Acute Emergencies** (fix with urgent training, e.g., staff behavior)
 
